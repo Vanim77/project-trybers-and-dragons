@@ -5,11 +5,11 @@ abstract class Race {
   ) { }
 
   get name(): string {
-    return this.name;
+    return this._name;
   }
 
   get dexterity(): number {
-    return this.dexterity;
+    return this._dexterity;
   }
 
   static createdRacesInstances(): number {
