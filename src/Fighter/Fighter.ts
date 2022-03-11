@@ -1,12 +1,10 @@
 import IEnergy from '../Energy';
+import ISimpleFighter from './SimpleFighter';
 
-export interface IFighter {
-  lifePoints: number,
-  strength: number,
+export interface IFighter extends ISimpleFighter {
   defense: number,
   energy?: IEnergy,
   attack(enemy: IFighter): void,
   special(enemy: IFighter): void,
   levelUp(): void,
-  receiveDamage(attackPoints: number): void,
 }
