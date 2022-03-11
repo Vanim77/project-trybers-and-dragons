@@ -1,7 +1,7 @@
 import ISimpleFighter from './Fighter/SimpleFighter';
 
 class Monster implements ISimpleFighter {
-  constructor(private _lifePoints = 85, private _strength = 63) { }
+  constructor(protected _lifePoints = 85, private _strength = 63) { }
 
   public get lifePoints() {
     return this._lifePoints;
